@@ -21,7 +21,6 @@ ADD src/git-xbmc-tsp_20141231.ad747d9-1_amd64.deb /root/git-xbmc-tsp_20141231.ad
 ADD src/kodi.sh /etc/service/xbmc/run
 ADD src/advancedsettings.xml /advancestore/
 ADD src/firstrun.sh /etc/my_init.d/firstrun.sh
-ADD src/5071.patch /5071.patch
 RUN chmod +x /etc/service/xbmc/run && \
 chmod +x /etc/my_init.d/firstrun.sh && \
 apt-get update && \
