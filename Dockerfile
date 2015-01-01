@@ -35,7 +35,7 @@ apt-get install -y fonts-liberation libaacs0 libbluray1 libasound2 libass4 libas
 cd /root && \
 dpkg -i git-xbmc-tsp_20141231.ad747d9-1_amd64.deb && \
 chown -R nobody:users /opt/kodi-server && \
-chown -R nobody:users /advancestore && \
+chown -R nobody:users /advancestore
 
 # Set ports
 EXPOSE 9777/udp 8080/tcp
