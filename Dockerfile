@@ -17,7 +17,7 @@ chown -R nobody:users /home && \
 # Install Dependencies ,add startup files and debfile
 mkdir -p /root/advancestore && \
 mkdir /etc/service/xbmc
-ADD src/git-xbmc-tsp_20141231.ad747d9-1_amd64.deb /root/git-xbmc-tsp_20141231.ad747d9-1_amd64.deb
+ADD src/sparkly-kodi-headless_20150102.0272aff-1_amd64.deb /root/kodi.deb
 ADD src/kodi.sh /etc/service/xbmc/run
 ADD src/advancedsettings.xml /advancestore/
 ADD src/firstrun.sh /etc/my_init.d/firstrun.sh
@@ -33,7 +33,7 @@ apt-get install -y libxslt1.1 fonts-liberation libaacs0 libbluray1 libasound2 li
 
 # Install deb file and set permissions for files etc..
 cd /root && \
-dpkg -i git-xbmc-tsp_20141231.ad747d9-1_amd64.deb && \
+dpkg -i kodi.deb && \
 chown -R nobody:users /opt/kodi-server && \
 chown -R nobody:users /advancestore && \
 rm -rf /root/git-xbmc-tsp_20141231.ad747d9-1_amd64.deb
