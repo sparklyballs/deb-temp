@@ -17,7 +17,7 @@ chown -R nobody:users /home && \
 # Install Dependencies ,add startup files and debfile
 mkdir -p /root/advancestore && \
 mkdir /etc/service/xbmc
-ADD src/sparkly-kodi-headless_20150102.0272aff-1_amd64.deb /root/kodi.deb
+ADD src/sparkly-kodi-headless_0-1_amd64.deb /root/kodi.deb
 ADD src/kodi.sh /etc/service/xbmc/run
 ADD src/advancedsettings.xml /advancestore/
 ADD src/firstrun.sh /etc/my_init.d/firstrun.sh
